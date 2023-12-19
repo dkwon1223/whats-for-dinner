@@ -6,18 +6,20 @@
   <body>
     <nav>
       <h1>What's for Dinner?</h1>
-      <button>ADD A RECIPE</button>
+      <button id="add-recipe">ADD A RECIPE</button>
     </nav>
     <section class="main">
       <section class="flex-container">
         <section class="meal-selector flex-item">
-          <h2>What are you looking for?
-          </h2>
-          <ul>
-            <li><input type="checkbox"></li>
-          </ul>
+          <h2>What are you looking for?<span class="required">*</span></h2>
+          <h4><input type="checkbox">Side</h4>
+          <h4><input type="checkbox">Main Dish</h4>
+          <h4><input type="checkbox">Dessert</h4>
+          <h4><input type="checkbox">Entire Meal</h4>
+          <button id="lets-cook">LET'S COOK!</button>
         </section>
         <section class="meal-suggester flex-item">
+          <embed src="assets/cookpot.svg" alt="Cooking pot icon"/>
         </section>
       </section>
     </section>

@@ -9,18 +9,20 @@ red - #ee5253
 */
 html {
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
+    font-weight:100;
 }
 
 nav {
-    border: 2px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #0fb9b1;
+    height: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .main {
-    border: 2px solid red;
     height: 100%;
     width: 100%;
     background-image: url("../assets/burger-friends.jpg");
@@ -28,7 +30,6 @@ nav {
 }
 
 .flex-container {
-    border: 2px solid blue;
     height: 75%;
     display: flex;
     justify-content: center;
@@ -38,9 +39,51 @@ nav {
 }
 
 .flex-item {
-    border: 2px solid green;
     height: 60%;
     width: 30%;
     background-color: rgba(225, 225, 225, .9);
+    padding: 2%;
+}
+
+.meal-suggester {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.required {
+    color: red;
+}
+
+#lets-cook {
+    background-color: #0fb9b1;
+    border: none;
+    border-radius: 0.22rem;
+    width: 40%;
+    height: 12%;
+    cursor: pointer;
+}
+
+#add-recipe {
+    border: none;
+    border-radius: 0.22rem;
+    height: 50%;
+    cursor: pointer;
+}
+
+input {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+embed {
+    height: 50%;
 }
 
