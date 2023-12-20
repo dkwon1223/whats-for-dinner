@@ -9,7 +9,10 @@ red - #ee5253
 */
 html {
     font-family: 'Roboto', sans-serif;
-    font-weight:100;
+}
+
+h1, h2, h4 {
+    font-weight: 400;
 }
 
 nav {
@@ -20,6 +23,13 @@ nav {
     height: 10%;
     padding-left: 1%;
     padding-right: 1%;
+}
+
+#add-recipe-button {
+    border: none;
+    border-radius: 0.22rem;
+    height: 50%;
+    cursor: pointer;
 }
 
 .main {
@@ -45,17 +55,15 @@ nav {
     padding: 2%;
 }
 
-.meal-suggester {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .required {
     color: red;
 }
 
-#lets-cook {
+input {
+    cursor: pointer;
+}
+
+#lets-cook-button {
     background-color: #0fb9b1;
     border: none;
     border-radius: 0.22rem;
@@ -64,26 +72,15 @@ nav {
     cursor: pointer;
 }
 
-#add-recipe {
-    border: none;
-    border-radius: 0.22rem;
-    height: 50%;
-    cursor: pointer;
-}
-
-input {
-    width: 1.3em;
-    height: 1.3em;
-    background-color: white;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 1px solid black;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
+.meal-suggester {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 embed {
     height: 50%;
 }
+
+
 
