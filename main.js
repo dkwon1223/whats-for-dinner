@@ -1,6 +1,6 @@
 // Meal data arrays:
 
-let sidesArray = [
+let arraySides = [
     "Green Beans",
     "Zucchini and Squash",
     "White Rice",
@@ -30,7 +30,7 @@ let sidesArray = [
 
 //console.log(sidesArray.length);
 
-let mainsArray = [
+let arrayMains = [
     "Cedar Plank Salmon",
     "Herb Roasted Chicken",
     "Seared Scallops and Brown Butter and Lemon Pan Sauce",
@@ -60,7 +60,7 @@ let mainsArray = [
 
 //console.log(mainsArray.length);
 
-let dessertsArray = [
+let arrayDesserts = [
     "Chocolate Mousse",
     "Tiramisu",
     "Almond and Date Cake",
@@ -93,15 +93,31 @@ let dessertsArray = [
 let sideToggle = document.querySelector("#side");
 let mainToggle = document.querySelector("#main-dish");
 let dessertToggle = document.querySelector("#dessert");
+let entireMealToggle = document.querySelector("#entire-meal");
+let letsCookButton = document.querySelector("#lets-cook-button");
+
 let mealSuggester = document.querySelector(".meal-suggester");
 
-sideToggle.addEventListener("click", displaySideDish);
-mainToggle.addEventListener("click", displayMainDish);
-dessertToggle.addEventListener("click", displayDessertDish);
+letsCookButton.addEventListener("click", displayDish);
 
 function getRandomIndex(start, end) {
     return Math.floor(Math.random() * (end - start + 1) + start); 
 }
+
+function displayDish() {
+    if(sideToggle.checked) {
+
+    } else if(mainToggle.checked) {
+
+    } else if(dessertToggle.checked) {
+
+    } else if(entireMealToggle.checked) {
+
+    } else {
+        
+    }
+}
+
 
 
 

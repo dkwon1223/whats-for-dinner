@@ -78,6 +78,33 @@ input {
     align-items: center;
 }
 
+.meal-output-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.meal-output-item {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+}
+
+#you-should-make {
+    text-align: center;
+}
+
+#meal-text {
+    text-align: center;
+    font-size: larger;
+}
+
 embed {
     height: 50%;
 }
