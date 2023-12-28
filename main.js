@@ -63,13 +63,13 @@ let arrayMains = [
 let arrayDesserts = [
     "Chocolate Mousse",
     "Tiramisu",
-    "Almond and Date Cake",
+    "Almond & Date Cake",
     "Creme Brulee",
     "Lemon Meringue Pie",
     "Banana Split",
     "Amaretto Cheesecake",
     "Affogato",
-    "Apple and Custard Crumble",
+    "Apple & Custard Crumble",
     "Sticky Toffee Pudding",
     "Banana Pudding",
     "Bananas Foster",
@@ -117,6 +117,8 @@ function displayDish() {
         mealOutputText.innerHTML = arrayMains[getRandomIndex(0, (arrayMains.length - 1))];
     } else if(dessertsToggle.checked) {
         mealOutputText.innerHTML = arrayDesserts[getRandomIndex(0, (arrayDesserts.length - 1))];
+    } else if(entireMealToggle.checked) {
+        mealOutputText.innerHTML = `${arrayMains[getRandomIndex(0, (arrayMains.length - 1))]} with a side of ${arraySides[getRandomIndex(0, (arraySides.length - 1))]} and ${arrayDesserts[getRandomIndex(0, (arrayDesserts.length - 1))]} for dessert!`;
     } else {
         alert("You must select an option to start cooking!");
     }
