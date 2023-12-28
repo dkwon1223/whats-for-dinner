@@ -99,3 +99,11 @@ sideToggle.addEventListener("click", displaySideDish);
 mainToggle.addEventListener("click", displayMainDish);
 dessertToggle.addEventListener("click", displayDessertDish);
 
+function getRandomIndex(start, end) {
+    return Math.floor(Math.random() * (end - start + 1) + start); 
+}
+
+
+
+
+
