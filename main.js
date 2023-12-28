@@ -90,13 +90,16 @@ let arrayDesserts = [
 
 //console.log(dessertsArray.length);
 
-let sideToggle = document.querySelector("#side");
-let mainToggle = document.querySelector("#main-dish");
-let dessertToggle = document.querySelector("#dessert");
+let sidesToggle = document.querySelector("#side");
+let mainsToggle = document.querySelector("#main-dish");
+let dessertsToggle = document.querySelector("#dessert");
 let entireMealToggle = document.querySelector("#entire-meal");
 let letsCookButton = document.querySelector("#lets-cook-button");
+let clearButton = document.querySelector("#clear");
 
-let mealSuggester = document.querySelector(".meal-suggester");
+let cookPotIcon = document.querySelector(".cookpot-icon");
+let mealOutputSection = document.querySelector(".meal-output-container");
+let mealOutputText = document.querySelector("#meal-text");
 
 letsCookButton.addEventListener("click", displayDish);
 
@@ -105,16 +108,16 @@ function getRandomIndex(start, end) {
 }
 
 function displayDish() {
-    if(sideToggle.checked) {
-
-    } else if(mainToggle.checked) {
-
-    } else if(dessertToggle.checked) {
-
-    } else if(entireMealToggle.checked) {
-
+    cookPotIcon.classList.add("hidden");
+    mealOutputSection.classList.remove("hidden");
+    if(sidesToggle.checked) {
+         mealOutputText.innerHTML = arraySides[getRandomIndex(0, (arraySides.length - 1))];
+    } else if(mainsToggle.checked) {
+        mealOutputText.innerHTML = arrayMains[getRandomIndex(0, (arrayMains.length - 1))];
+    } else if(dessertsToggle.checked) {
+        mealOutputText.innerHTML = arrayDesserts[getRandomIndex(0, (arrayDesserts.length - 1))];
     } else {
-        
+        alert("You must select an option to start cooking!");
     }
 }
 

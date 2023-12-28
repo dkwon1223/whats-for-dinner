@@ -12,21 +12,24 @@
       <section class="flex-container">
         <section class="meal-selector flex-item">
           <h2>What are you looking for?<span class="required">*</span></h2>
-          <h4><input type="radio" id="side">Side</h4>
-          <h4><input type="radio" id="main-dish">Main Dish</h4>
-          <h4><input type="radio" id="dessert">Dessert</h4>
-          <h4><input type="radio" id="entire-meal">Entire Meal</h4>
+          <h4><input name="selector" type="radio" id="side">Side</h4>
+          <h4><input name="selector" type="radio" id="main-dish">Main Dish</h4>
+          <h4><input name="selector" type="radio" id="dessert">Dessert</h4>
+          <h4><input name="selector" type="radio" id="entire-meal">Entire Meal</h4>
           <button id="lets-cook-button">LET'S COOK!</button>
         </section>
         <section class="meal-suggester flex-item">
-          <embed id="cookpot-icon" src="assets/cookpot.svg" alt="Cooking pot icon"/> 
-          <section class="meal-output-container, hidden">
+          <section class="cookpot-icon">
+            <embed src="assets/cookpot.svg" alt="Cooking pot icon"/> 
+          </section>
+          <section class="meal-output-container hidden">
             <section class="meal-output-item" id="you-should-make">
               <i>You should make:</i>
             </section>
             <section class="meal-output-item">
               <h1 id="meal-text"><b></b></h1>
             </section>
+            <button id="clear">Clear</button>
           </section>  
         </section>
       </section>

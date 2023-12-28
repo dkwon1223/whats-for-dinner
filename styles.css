@@ -104,6 +104,16 @@ input {
     font-size: larger;
 }
 
+#clear {
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 0.22rem;
+    width: 20%;
+    height: 70%;
+    cursor: pointer;
+}
+
 embed {
     height: 50%;
 }
