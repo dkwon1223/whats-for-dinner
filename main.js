@@ -102,6 +102,7 @@ let mealOutputSection = document.querySelector(".meal-output-container");
 let mealOutputText = document.querySelector("#meal-text");
 
 letsCookButton.addEventListener("click", displayDish);
+clearButton.addEventListener("click", clearPage);
 
 function getRandomIndex(start, end) {
     return Math.floor(Math.random() * (end - start + 1) + start); 
@@ -120,6 +121,12 @@ function displayDish() {
         alert("You must select an option to start cooking!");
     }
 }
+
+function clearPage() {
+    location.reload();
+}
+
+
 
 
 
