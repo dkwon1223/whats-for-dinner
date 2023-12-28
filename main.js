@@ -26,9 +26,9 @@ let sidesArray = [
     "Honey Miso Eggplant",
     "Mushroom Risotto",
     "Greek Salad"
-]
+];
 
-console.log(sidesArray.length);
+//console.log(sidesArray.length);
 
 let mainsArray = [
     "Cedar Plank Salmon",
@@ -56,9 +56,9 @@ let mainsArray = [
     "Swedish Meatballs",
     "Smoky Buffalo Wings",
     "Classic Carbonara"
-]
+];
 
-console.log(mainsArray.length);
+//console.log(mainsArray.length);
 
 let dessertsArray = [
     "Chocolate Mousse",
@@ -86,6 +86,16 @@ let dessertsArray = [
     "Chocolate Chip Cookies",
     "Baked Alaska",
     "S'mores"
-]
+];
 
-console.log(dessertsArray.length);
+//console.log(dessertsArray.length);
+
+let sideToggle = document.querySelector("#side");
+let mainToggle = document.querySelector("#main-dish");
+let dessertToggle = document.querySelector("#dessert");
+let mealSuggester = document.querySelector(".meal-suggester");
+
+sideToggle.addEventListener("click", displaySideDish);
+mainToggle.addEventListener("click", displayMainDish);
+dessertToggle.addEventListener("click", displayDessertDish);
+
