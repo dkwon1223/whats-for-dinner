@@ -94,15 +94,20 @@ let sidesToggle = document.querySelector("#side");
 let mainsToggle = document.querySelector("#main-dish");
 let dessertsToggle = document.querySelector("#dessert");
 let entireMealToggle = document.querySelector("#entire-meal");
+
 let letsCookButton = document.querySelector("#lets-cook-button");
 let clearButton = document.querySelector("#clear");
+let addRecipeButton = document.querySelector("#add-recipe-button");
+let addNewRecipeButton = document.querySelector("#add-new-button");
 
 let cookPotIcon = document.querySelector(".cookpot-icon");
 let mealOutputSection = document.querySelector(".meal-output-container");
 let mealOutputText = document.querySelector("#meal-text");
+let addRecipeSection = document.querySelector(".add-recipe-section");
 
 letsCookButton.addEventListener("click", displayDish);
 clearButton.addEventListener("click", clearPage);
+addRecipeButton.addEventListener("click", displayAddRecipe);
 
 function getRandomIndex(start, end) {
     return Math.floor(Math.random() * (end - start + 1) + start); 
@@ -127,6 +132,12 @@ function displayDish() {
 function clearPage() {
     location.reload();
 }
+
+function displayAddRecipe() {
+    addRecipeSection.classList.remove("hidden");
+}
+
+
 
 
 

@@ -135,12 +135,17 @@ embed {
 
 .footer-item {
     text-align: center;
+    margin-right: 1%;
     margin-left: 1%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    height: 80%;
+}
+
+#add-new-button {
+    background-color: #0fb9b1;
+    border: none;
+    border-radius: 0.22rem;
+    width: 8%;
+    height: 40%;
+    cursor: pointer;
 }
 
 
